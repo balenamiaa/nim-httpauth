@@ -19,7 +19,7 @@ from times import utc, fromUnix
 import libsodium/sodium
 import libsodium/sodium_sizes
 
-import httpauthpkg/[base,
+import httpauth/private/[base,
   mailer,
   json_backend,
   sql_backend]
@@ -31,15 +31,15 @@ export newJsonBackend,
   LoginError
 
 when defined(redis):
-  import httpauthpkg/redis_backend
+  import httpauth/private/redis_backend
   export newRedisBackend
 
 when defined(etcd):
-  import httpauthpkg/etcd_backend
+  import httpauth/private/etcd_backend
   export newEtcdBackend
 
 when defined(mongodb):
-  import httpauthpkg/mongodb_backend
+  import httpauth/private/mongodb_backend
   export newMongoDbBackend
 
 

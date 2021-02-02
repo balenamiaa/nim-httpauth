@@ -4,8 +4,8 @@
 
 import unittest
 
-import httpauthpkg/base
-import httpauthpkg/sql_backend
+import private/base
+import private/sql_backend
 
 suite "parse_uri":
   test "parse_uri":

@@ -4,8 +4,7 @@ version       = "0.3.0"
 author        = "Federico Ceratto"
 description   = "HTTP Authentication and Authorization"
 license       = "LGPLv3"
-
-bin           = @["httpauth"]
+skipDirs      = @["tests"]
 
 # Dependencies
 

@@ -9,7 +9,7 @@ import unittest,
 
 from libsodium/sodium import crypto_pwhash_str_verify
 
-import httpauthpkg/base
+import private/base
 
 import httpauth
 

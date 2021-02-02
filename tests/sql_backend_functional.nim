@@ -7,8 +7,8 @@ import unittest,
   strutils
 
 from os import removeFile, paramCount, paramStr
-import httpauthpkg/base
-import httpauthpkg/sql_backend
+import private/base
+import private/sql_backend
 
 if paramCount() != 1:
   echo "URL param required"

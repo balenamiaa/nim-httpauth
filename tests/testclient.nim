@@ -8,7 +8,7 @@ import httpclient,
   tables,
   times
 
-import httpauthpkg/cookiejar
+import private/cookiejar
 
 type
   Cookie = object of RootObj

@@ -8,14 +8,14 @@ import unittest,
   strutils,
   os
 
-import httpauthpkg/base
+import private/base
 
 import httpauth
 
 when not defined(mock_send_email):
   {.error: "set -d:mock_send_email".}
 
-from httpauthpkg/mailer import mock_email_spool
+from private/mailer import mock_email_spool
 
 if paramCount() != 1:
   echo "URL param required"
