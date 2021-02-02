@@ -6,9 +6,7 @@ description   = "HTTP Authentication and Authorization"
 license       = "LGPLv3"
 skipDirs      = @["tests"]
 
-# Dependencies
 
-requires "nim >= 0.19.0", "libsodium"
 
-# Tested with dependencies:
-# redis 0.3.0
+requires "nim >= 1.0.0", "libsodium"
+
